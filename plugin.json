@@ -1,0 +1,14 @@
+{
+  "$schema": "https://cdn.skyvexsoftware.com/schemas/stratos-plugin.json",
+  "id": "skycrew-dispatch",
+  "type": "airline",
+  "name": "SkyCrew Dispatch",
+  "version": "0.1.0",
+  "description": "Dispatch briefing and booked-flight overview for FlightDeck OS SkyCrew inside Stratos.",
+  "author": {
+    "id": "flightdeck-os",
+    "name": "FlightDeck OS"
+  },
+  "icon_light": "icon-light.svg",
+  "icon_dark": "icon-dark.svg"
+}
