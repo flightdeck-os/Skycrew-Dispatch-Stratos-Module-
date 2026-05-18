@@ -114,3 +114,15 @@ The workflow will:
 5. Zip the `dist` output into `bundle.zip`.
 6. Upload the bundle to the Skyvex Stratos plugin API.
 
+
+
+## GitHub repository
+
+Recommended remote:
+
+```bash
+git remote add origin https://github.com/flightdeck-os/skycrew-dispatch-stratos-plugin.git
+git push -u origin main
+```
+
+Deployment uses the GitHub Actions secret `SKYVEX_API_TOKEN`. Do not commit the token into this repository.
