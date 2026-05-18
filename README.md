@@ -1,3 +1,48 @@
+# SkyCrew Dispatch Stratos Plugin
+
+This repository is ready for the Stratos Build & Deploy flow.
+
+## Important deploy setup
+
+Add this GitHub Actions repository secret before deploying:
+
+```text
+SKYVEX_API_TOKEN
+```
+
+Then push to `main` or run the workflow manually from GitHub Actions.
+
+## Build locally
+
+```bash
+pnpm install
+pnpm build
+```
+
+## Bundle and deploy locally
+
+```bash
+SKYVEX_API_TOKEN=your-token pnpm bundle
+```
+
+The deploy script uses the Stratos SDK `stratos-deploy` CLI. It builds `dist/`, creates `bundle.zip`, and uploads the plugin to Skyvex.
+
+## Version
+
+Current plugin version: `1.0.1`
+
+If Skyvex says the version already exists, bump both:
+
+```text
+plugin.json
+package.json
+```
+
+to the next semver, for example `1.0.2`.
+
+---
+
+
 # SkyCrew Dispatch for Stratos
 
 A Stratos airline plugin that connects the Stratos app to the FlightDeck OS / SkyCrew dispatch system.

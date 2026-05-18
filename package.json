@@ -1,12 +1,12 @@
 {
   "name": "skycrew-dispatch",
-  "version": "2.0.0",
+  "version": "1.0.1",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "bundle": "vite build && node -e \"const fs=require('fs'); const cp=require('child_process'); if(fs.existsSync('bundle.zip')) fs.unlinkSync('bundle.zip'); cp.execSync('cd dist && zip -r ../bundle.zip .',{stdio:'inherit'});\""
+    "bundle": "pnpm build && stratos-deploy"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
@@ -15,7 +15,10 @@
     "tailwindcss": "latest",
     "@tailwindcss/vite": "latest",
     "@skyvexsoftware/stratos-sdk": "latest",
-    "lucide-react": "latest"
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "sonner": "latest"
   },
   "devDependencies": {}
 }
