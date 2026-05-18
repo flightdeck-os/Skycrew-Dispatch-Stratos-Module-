@@ -3,7 +3,7 @@
   "id": "skycrew-dispatch",
   "type": "airline",
   "name": "SkyCrew Dispatch",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Dispatch briefing and booked-flight overview for FlightDeck OS SkyCrew inside Stratos.",
   "author": {
     "id": "flightdeck-os",

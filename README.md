@@ -92,3 +92,25 @@ Then use that GitHub repository URL in the Stratos plugin install workflow.
 ## Notes
 
 This plugin does not replace the main Stratos Core API. It adds a dispatch-focused UI module that reads from the SkyCrew Stratos API connection.
+
+## GitHub Actions Deployment
+
+This repository includes `.github/workflows/deploy.yml`.
+
+Before pushing, add this GitHub repository secret:
+
+```text
+SKYVEX_API_TOKEN
+```
+
+The workflow runs automatically when changes are pushed to `main`, or manually from the GitHub Actions tab using **Run workflow**.
+
+The workflow will:
+
+1. Install Node 20 and pnpm.
+2. Read `plugin.json` for the plugin ID and version.
+3. Install dependencies.
+4. Build the Stratos plugin.
+5. Zip the `dist` output into `bundle.zip`.
+6. Upload the bundle to the Skyvex Stratos plugin API.
+
